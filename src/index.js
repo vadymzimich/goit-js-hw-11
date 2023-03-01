@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { removeGallery } from './js/modules/cleanGallery.js';
+
 import { renderImageList } from './js/modules/renderMarkup.js';
 import { getImages } from './js/modules/requestAPI';
 import Notiflix from 'notiflix';
@@ -55,7 +55,7 @@ btnLoadMore.addEventListener('click', () => {
   });
 });
 
-export function removeGallery() {
+function removeGallery() {
   gallery.innerHTML = '';
   pageNumber = 1;
   btnLoadMore.style.display = 'none';
