@@ -54,3 +54,9 @@ btnLoadMore.addEventListener('click', () => {
     }
   });
 });
+
+export function removeGallery() {
+  gallery.innerHTML = '';
+  pageNumber = 1;
+  btnLoadMore.style.display = 'none';
+}
